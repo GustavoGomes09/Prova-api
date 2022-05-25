@@ -26,7 +26,11 @@ export default function Index() {
                 <button onClick={adicionar}>Adicionar Número</button>
             </div>
 
-            
+            <div>
+                {numeros.map(item =>
+                    <div> {item} </div>
+                )}
+            </div>
 
             <div>
                 <button onClick={verificarMaior}>Verificar</button> Maior Número é: {resposta}
